@@ -5,7 +5,12 @@
   "repository": "https://github.com/decurd/typechain.git",
   "license": "MIT",
   "scripts": {
-    "start": "node index.ts",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \" node dist/index.js\" "
+  },
+  "devDependencies": {
+    "tsc-watch": "^1.0.31"
+  },
+  "dependencies": {
+    "typescript": "^3.2.2"
   }
 }
