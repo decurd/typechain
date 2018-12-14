@@ -1,4 +1,4 @@
-import * as CryptoJS from "crypto-js";
+import CryptoJS from "crypto-js";
 
 class Block {
   public index: number;
@@ -34,7 +34,7 @@ class Block {
 const genesisBlock: Block = new Block(0, "2312312312312", "", "hello", 123456);
 
 let blockchain: Block[] = [genesisBlock];
-// console.log(blockchain);
+console.log(blockchain);
 
 const getBlockchain = (): Block[] => blockchain;
 const getLatestBlock = (): Block => blockchain[blockchain.length -1];
